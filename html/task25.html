@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contain{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(227, 244, 117);
+
+        }
+        .head1{
+            background-color: blue;
+            height: 100px;
+            width: 100%;
+            margin: 10px;
+            }
+        .head2{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;          
+            }
+        .div1{
+            height: 305px;
+            width: 525px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            background-color: orange;
+                
+            }
+        .div2,.div3{
+            background-color: green;
+            height: 150px;
+            width: 760px; 
+            margin: 5px;            
+            }
+       .head4{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            }
+        .div4,.div5{
+            background-color: red;
+            height: 170px;
+            width: 620px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+        <div class="head1"></div>
+        <div class="head2">
+            <div class="div1"></div>
+            <div class="empty block">
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+        </div>
+        <div class="head4">
+            <div class="div4"></div>
+            <div class="div5"></div>
+        </div>
+</body>
+</html>

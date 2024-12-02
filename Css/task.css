@@ -1,0 +1,120 @@
+.on{
+    height: 260px;
+    width: 300px;
+    background-color: rgba(0, 255, 255, 0.623);
+    position: absolute;
+    top: 50px;
+    left: 360px;
+    border-radius: 20px;
+}
+.tw{
+    height: 260px;
+    width: 300px;
+    background-color: rgba(255, 106, 0, 0.711);
+    position: relative;
+    top: 350px;
+    left: 350px;
+    border-radius: 20px;
+}
+.th{
+    height: 260px;
+    width: 300px;
+    background-color: rgba(255, 247, 0, 0.684);
+    position: relative;
+    top: 70px;
+    left: 690px;
+    bottom: 20%;
+    border-radius: 20px;
+}
+.fo{
+    height: 260px;
+    width: 300px;
+    background-color: rgba(255, 0, 157, 0.483);
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    border-radius: 20px;
+}
+#o{
+    height: 70px;
+    width: 70px;
+    border: 8px solid rgba(255, 255, 255, 0.823);
+    border-radius: 50px;
+    background-color: rgba(255, 0, 0, 0.759);
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: -10px;
+    z-index: 4;
+}
+#t{
+    height: 70px;
+    width: 70px;
+    border: 8px solid rgba(255, 255, 255, 0.823);
+    border-radius: 50px;
+    background-color: rgba(255, 251, 0, 0.552);
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    left: -10px;
+    z-index: 4;
+}
+#th{
+    height: 70px;
+    width: 70px;
+    border: 8px solid rgba(255, 255, 255, 0.823);
+    border-radius: 50px;
+    background-color: rgba(0, 145, 255, 0.575);
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    left: 230px;
+    z-index: 4;
+}
+#fo{
+    height: 70px;
+    width: 70px;
+    border: 8px solid rgba(255, 255, 255, 0.823);
+    border-radius: 50px;
+    background-color: rgba(0, 255, 72, 0.692);
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: 230px;
+    z-index: 4;
+}
+b{
+    position: relative;
+    top: 7px;
+}
+p{
+    height: 80px;
+    width: 220px;
+    border: 5px solid rgba(255, 0, 0, 0.822);
+    border-radius: 30px;
+    background-color: rgba(255, 0, 0, 0.881);
+    color: rgb(34, 34, 29);
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    left: 555px;
+    bottom: 305px;
+    z-index: 4;
+}
+.bb{
+    position: absolute;
+    top: 15px;
+    right: 65px;
+}
+.one,.two,.three,.four{
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    font-size: 20px;
+    color: white;
+}
+body{
+    background-image: url("https://www.hdwallpapersfreedownload.com/uploads/large/fruits/gorgeous-mix-fresh-fruits-hd.jpg");
+    background-size: cover;
+}
+

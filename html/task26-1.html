@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-areas: "header header header header" "sec1 sec2 sec3 sec4" " footer footer footer footer";
+    }
+    .header{
+        background-color: rgb(64, 64, 102);
+        grid-area: header;
+       
+        
+    }
+    .sec1{
+        background-color: rgb(255, 55, 0);
+        grid-area: sec1;
+        
+    }
+    .sec2{
+        background-color: rgb(255, 191, 0);
+        grid-area: sec2;
+       
+    }
+    .sec3{
+        background-color: rgb(242, 0, 255);
+        grid-area: sec3;
+       
+    }
+    .sec4{
+        background-color: blue;
+        grid-area: sec4;
+        
+    }
+    .footer{
+        background-color: brown;
+        grid-area: footer;        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="sec1">sec1</div>
+        <div class="sec2">sec2</div>
+        <div class="sec3">sec3</div>
+        <div class="sec4">sec4</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nav>ul>li child -->
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+    <!-- main>section>p*5 -->
+    <main>
+        <section>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </section>
+    </main>
+    <!-- nav+p+nav sibilings-->
+    <nav></nav>
+    <p></p>
+    <nav></nav>
+    <!-- div+div>p+nav^p climb-up ^-->
+    <div></div>
+    <div>
+        <p></p>
+        <nav></nav>
+    </div>
+    <p></p>
+    <!-- div+div>p+nav^P climb-up ^-->
+    <div></div>
+    <div>
+        <p></p>
+        <nav></nav>
+    </div>
+    <p></p>
+
+    <!-- div.iteam  to create class-->
+    <div class="iteam"></div>
+
+    <!-- div#iteam to create id-->
+    <div id="iteam"></div>
+    <!-- div>(header>ul>li*3>a)+footer>p grouping() -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+    <!-- #header create a id anme-->
+    <div id="header"></div>
+    <!-- p*3#gb create a n numeber of p tag into id name-->
+    <p id="gb"></p>
+    <p id="gb"></p>
+    <p id="gb"></p>
+    <!-- p[title="hello world"] custom attributes-->
+    <p title="hello world"></p>
+    <!-- td[rowspan=2 colspan=3title] custom attributes-->
+    <td rowspan="2" colspan="3title"></td>
+    <!-- ul>li.item$*5 item numbering-->
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+    <!-- h$[title=item$]{header $}*3 item numbering-->
+    <h1 title="item1">header 1</h1>
+    <h2 title="item2">header 2</h2>
+    <h3 title="item3">header 3</h3>
+    <!-- ul>li.item$$$*4 -->
+    <ul>
+        <li class="item001"></li>
+        <li class="item002"></li>
+        <li class="item003"></li>
+        <li class="item004"></li>
+    </ul>
+    <!-- ul>li.item$@-*4  to create class with name-->
+    <ul>
+        <li class="item4"></li>
+        <li class="item3"></li>
+        <li class="item2"></li>
+        <li class="item1"></li>
+    </ul>
+    <!-- ul>li#item$@-*4 to create id with name-->
+    <ul>
+        <li id="item5"></li>
+        <li id="item4"></li>
+        <li id="item3"></li>
+        <li id="item2"></li>
+        <li id="item1"></li>
+    </ul>
+    <!-- form>(label+input)*5 -->
+    <form action=""><label for=""></label><input type="text"><label for=""></label><input type="text"><label for=""></label><input type="text"><label for=""></label><input type="text"><label for=""></label><input type="text"></form>
+</body>
+</html>

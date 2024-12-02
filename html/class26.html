@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .container{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            grid-gap:20px;
+            /*grid-template-columns:1fr 1fr 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 3px;*/
+        }
+        .item{
+            background-color: blue;
+            color: aliceblue;
+            border: 1px solid green;
+            height: 100px;  
+        }
+    </style>
+</head>
+<body>
+    <!-- grid -->
+     <div class="container">
+         <!-- shortkey div.item{text}*11 -->
+     <div class="item one">text1</div>
+     <div class="item two">text2</div>
+     <div class="item">text3</div>
+     <div class="item">text4</div>
+     <div class="item">text5</div>
+     <div class="item">text6</div>
+     <div class="item">text7</div>
+     <div class="item">text8</div>
+     <div class="item">text9</div>
+     <div class="item">text10</div>
+     <div class="item">text11</div> 
+    </div>
+    
+</body>
+</html>

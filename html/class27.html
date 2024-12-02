@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media screen and (min-width:300px) and (max-width:700px){
+            body{
+                background-color: aquamarine;
+            }
+            .parent{
+            background-color: red;
+            display: grid;
+            grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+        }
+        .child{
+            background-color: blue;
+            border: 1px solid black;
+            height: 100px;
+        }
+    }
+        @media screen and (min-width:700px) and (max-width:1000px){
+            body{
+                background-color: aquamarine;
+            }
+            .parent{
+            background-color: red;
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+        }
+        .child{
+            background-color: blue;
+            border: 1px solid black;
+            height: 100px;
+        }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }    
+    </style>
+</head>
+<body>
+    <div class="parent oneparent">
+        <div class="child one">text</div>
+        <div class="child two">text</div>
+        <div class="child three">text</div>
+        <div class="child four">text</div>
+        <div class="child five">text</div>
+    </div>
+</body>
+</html>
