@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Welcome</title>
+  <style>
+    img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  
+    <div id="likebutton"><img src="https://th.bing.com/th/id/OIP.ZwLeZWns0RBFfO_wlkohmQHaGz?rs=1&pid=ImgDetMain" alt=""></div>
+    <p>like:<span id="likescount"></span></p>
+    <div id="dislikebutton"><img src="https://pngmark.com/wp-content/uploads/2023/02/Dislike-button-image.png" alt=""></div>
+    <p>like:<span id="dislikescount"></span></p>
+ 
+ 
+  
+  <script>
+    const likebutton = document.querySelector("#likebutton");
+    const likescount = document.querySelector("#likescount");
+    const dislikebutton = document.querySelector("#dislikebutton");
+    const dislikescount = document.querySelector("#dislikescount");
+
+    let likecount =0;
+    let dislikecount = 0;
+
+    likebutton.addEventListener('click',()=>{
+      if(likecount<1){
+        likecount=1;
+        likescount.textContent=likecount;
+      }
+      else{
+        likecount=0;
+        likescount.textContent=likecount;
+      }
+    });
+    
+    dislikebutton.addEventListener('click',()=>{
+      if(dislikecount<1){
+        dislikecount=1;
+        dislikescount.textContent=dislikecount;
+      }
+      else{
+        dislikecount=0;
+        dislikescount.textContent=dislikecount;
+      }
+    });
+    
+  </script>
+  
+</body>
+</html>

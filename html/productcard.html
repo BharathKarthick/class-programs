@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            margin: 20px;
+        }
+        .productContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .item:hover {
+            transform: translateY(-10px);
+        }
+        .box {
+            padding: 20px;
+            text-align: center;
+        }
+        .title {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .product {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .description {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+        }
+        .cart {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .cart:hover {
+            background-color: #218838;
+        }
+        .cartCount {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .productContainer {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Cards</h1>
+    <div class="cartCount" id="cartCount">0</div>
+    <div class="productContainer" id="productContainer"></div>
+    <script>
+        const products = [
+            { title: "Product 1", image: "https://picsum.photos/200/200?random=1", description: "This is Product 1" },
+            { title: "Product 2", image: "https://picsum.photos/200/200?random=2", description: "This is Product 2" },
+            { title: "Product 3", image: "https://picsum.photos/200/200?random=3", description: "This is Product 3" },
+            { title: "Product 4", image: "https://picsum.photos/200/200?random=4", description: "This is Product 4" },
+            { title: "Product 5", image: "https://picsum.photos/200/200?random=5", description: "This is Product 5" },
+            { title: "Product 6", image: "https://picsum.photos/200/200?random=6", description: "This is Product 6" },
+            { title: "Product 7", image: "https://picsum.photos/200/200?random=7", description: "This is Product 7" },
+            { title: "Product 8", image: "https://picsum.photos/200/200?random=8", description: "This is Product 8" }
+        ];
+
+        const productContainer = document.getElementById("productContainer");
+
+        products.forEach(product => {
+            const items = document.createElement("div");
+            items.className = "item";
+
+            items.innerHTML = `
+                <div class="box">
+                    <p class="title">${product.title}</p>
+                    <img class="product" src="${product.image}" alt="">
+                    <p class="description">${product.description}</p>
+                </div>
+                <p class="cart">Add to Cart</p>
+            `;
+
+            productContainer.appendChild(items);
+        });
+
+        const cartBtn = document.querySelectorAll('.cart');
+        const cartCountElement = document.getElementById('cartCount');
+        let cartCount = 0;
+        cartBtn.forEach(cartButton => {
+            cartButton.addEventListener('click', () => {
+                cartCount++;
+                cartCountElement.textContent = cartCount;
+            });
+        });
+    </script>
+</body>
+</html>
