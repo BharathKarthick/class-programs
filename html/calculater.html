@@ -136,11 +136,15 @@
 
         function calculatorResult() {
             try {
-                display.value = eval(display.value);
-            } catch {
-                display.value = 'Error';
-                calculator.classList.add('shake');
-                setTimeout(() => calculator.classList.remove('shake'), 500);
+                display.value = eval(display.value)
+                if(display.value === "Infinity"){
+                    display.value = "Division by zero"
+                }
+            } catch (error){
+                
+            }
+            finally{
+                console.log("Done")
             }
         }
     </script>

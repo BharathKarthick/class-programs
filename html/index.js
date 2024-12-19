@@ -202,3 +202,54 @@
 //   }  
 //   let sum = findLargest(22, 20);
 //   console.log("The largest number is:", sum);
+
+// 18/12/2024
+
+// error handling
+// try{
+//     const result = app(10,0);
+//     console.log("result:", result);
+//     if (result === Infinity) {
+//     throw new Error ("Error: Division by zero is not allowed");
+//     }
+       
+// }catch(error){
+//     console.error("error caught:Division by zero", );
+// }finally{
+//     console.log("This is finally block");
+// }
+// function app(a,b){
+// return a/b
+// }
+
+
+// promise:
+
+const odd_even=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        try{
+            let Num = number(a)
+            console.log(Num)
+            resolve(Num)
+        }catch(error){
+            reject(error)
+        }
+    },1000)
+})
+ 
+function number(a){
+    if(a%2==0){
+    return("Even")
+    }
+    else if (a%2==1){
+    return("Odd")
+    }
+    else{
+        return("Nun")
+    }
+}
+
+odd_even
+.then(() => {console.log("resolve")})
+.catch((error) => {console.log(error.name)})
+.finally(() => {console.log("Done")})
